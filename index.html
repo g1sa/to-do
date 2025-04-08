@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do App</h1>
+    <form id="task-form">
+      <input type="text" id="task-name" placeholder="Task Name" required>
+      <select id="task-type" required>
+        <option value="">Select Type</option>
+        <option value="Personal">Personal</option>
+        <option value="Work">Work</option>
+        <option value="Study">Study</option>
+      </select>
+      <textarea id="task-desc" placeholder="Task Description" required></textarea>
+      <input type="color" id="task-bg" value="#d3e0ea">
+      <button type="submit">Save Task</button>
+    </form>
+    <button id="clear-btn">Clear All Tasks</button>
+    <div id="tasks-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
